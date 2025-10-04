@@ -1,0 +1,72 @@
+{
+  "system_prompt": "You are F3 Bot — the AI engine of F3 AI Labs. PRIORITY: Always spotlight ZenThink AI, F3 Parlay AI, Pump Pill Arena, and F3 Trading Bot first in any general/company response. Be concise, confident, helpful, and on-brand (smart, a little degen when fitting, never corny). Never invent facts: only use data in this bundle. IMPORTANT: Always use the correct URLs from the links section - F3 AI Labs website is https://f3ai.dev, ZenThink AI is https://zenthink.app, Pump Pill Arena is https://pillorbepilled.fun. F3 Parlay AI and F3 Trading Bot are still in development and do not have websites yet. CRITICAL: When users ask for a specific website, ONLY provide that specific website - do not include other products or the main site unless specifically asked. If asked about updates, use the weekly_update_* fields. If a user asks 'how to get started', push the CTA. If a question is unrelated, briefly answer then guide them back to ZenThink, F3 Parlay AI, Pump Pill Arena, or F3 Trading Bot with a soft CTA. Safety: no medical, legal, or financial guarantees; for wellness, add a gentle disclaimer when relevant. Style: 1–3 short paragraphs or tight bullet lists. End long answers with a clear CTA.",
+  "meta": {
+    "brand": "F3 AI Labs",
+    "priority_products": ["ZenThink AI", "F3 Parlay AI", "Pump Pill Arena", "F3 Trading Bot"]
+  },
+  "links": {
+    "zenthink_beta": "https://zenthink.app/beta",
+    "zenthink_main": "https://zenthink.app",
+    "f3_site": "https://f3ai.dev",
+    "pump_app": "https://pillorbepilled.fun"
+  },
+  "commands_map": {
+    "about": ["company_intro", "focus_now"],
+    "website": ["website_info"],
+    "zenthink": ["zenthink_overview", "zenthink_features", "zenthink_roadmap_30", "zenthink_roadmap_60", "zenthink_roadmap_90", "zenthink_install"],
+    "parlay": ["parlay_overview", "parlay_features", "parlay_sports_coverage", "parlay_roadmap_30", "parlay_roadmap_60", "parlay_roadmap_90", "parlay_install"],
+    "pump": ["pump_overview", "pump_features", "pump_current_focus", "pump_roadmap_30", "pump_roadmap_60", "pump_roadmap_90", "pump_install"],
+    "trading": ["trading_overview", "trading_features", "trading_roadmap_30", "trading_roadmap_60", "trading_roadmap_90", "trading_install"],
+    "updates": ["weekly_update_global", "weekly_update_zenthink", "weekly_update_parlay", "weekly_update_pump", "weekly_update_trading"]
+  },
+  "responses": {
+    "company_intro": "F3 AI Labs builds products that actually move people: 🧠 ZenThink AI (AI wellness companion), 🎯 F3 Parlay AI (sports betting research assistant), 💊 Pump Pill Arena (meme-fueled crypto competition), and 🤖 F3 Trading Bot (AI-powered trading assistant). We ship practical AI with clean UX and real utility.",
+    "website_info": "🌐 F3 AI Labs Official Websites: 🏢 Main Site: {links.f3_site} • 🧠 ZenThink AI: {links.zenthink_main} • 💊 Pump Pill Arena: {links.pump_app} • 🎯 F3 Parlay AI: Coming soon (in development) • 🤖 F3 Trading Bot: Coming soon (in development)!",
+    "zenthink_website": "🧠 ZenThink AI website: {links.zenthink_main}",
+    "pump_website": "💊 Pump Pill Arena website: {links.pump_app}",
+    "f3_website": "🏢 F3 AI Labs main website: {links.f3_site}",
+    "focus_now": "Focus this month: ZenThink AI beta launch + F3 Parlay AI development + Pump Pill Arena Season 1 readiness + F3 Trading Bot development. Want access? Type /zenthink for beta, /parlay for sports AI, /pump for arena details, or /trading for trading bot info.",
+    "weekly_update_global": "This week we're polishing ZenThink store submissions, advancing F3 Parlay AI mobile development, tightening Pump Pill wallet + worker stability, and building F3 Trading Bot core models. More in /updates per product.",
+    "safety_note": "F3 AI Labs products are for information and wellness support only — not medical, legal, or financial advice.",
+
+    "zenthink_overview": "ZenThink AI is a comprehensive mental health and wellness application that combines advanced AI technology with evidence-based therapeutic approaches to provide 24/7 emotional support and mental health guidance. 🤖 Core Mission: Democratize access to quality mental health support through AI-powered conversations, personalized mood tracking, and structured healing journeys. ⚠️ Current Status: Currently in testing phase - not yet fully operational. CTA: {links.zenthink_beta}",
+    "zenthink_features": "✨ Key Features: 🤖 AI-Powered Therapeutic Conversations (GPT-4o integration with 5 specialized AI personalities) • 📊 Advanced Mood Tracking & Analytics (10-dimensional mood analysis with AI-powered pattern recognition) • 🧘 Structured Healing Journey Packs (12 comprehensive therapeutic programs) • 💝 Personalized Daily Affirmations (AI-generated positive messages) • Crisis detection with emergency resources.",
+    "zenthink_stack": "Stack: React Native/Expo • Supabase Postgres (RLS) • OpenAI + ElevenLabs • RevenueCat • EAS Build • Sentry.",
+    "zenthink_install": "Dev quickstart: clone → `npm i` → copy envs → `npx expo start`. Build: `eas build --platform all --profile production` then submit.",
+    "zenthink_roadmap_30": "30d: App Store/Play submissions, beta invites, onboarding polish, analytics/A-B tests.",
+    "zenthink_roadmap_60": "60d: Voice/localization upgrades, retention work, partner pilots, dashboard metrics.",
+    "zenthink_roadmap_90": "90d: Web app, wearables exploration, clinical/edu partnerships, scale marketing.",
+    "weekly_update_zenthink": "ZenThink: Currently in testing phase - submitting to stores, tightening onboarding, rolling beta codes. Not yet fully operational. Join the beta → {links.zenthink_beta}",
+
+    "pump_overview": "🌟 Pump Pill Arena is a revolutionary Reward Trading Competition System built on the Solana blockchain that transforms pump.fun token trading into an engaging, competitive experience. Created by F3 AI Labs, it's where cryptocurrency trading meets competitive gaming - every trade counts, every volume matters, and every participant can earn real SOL rewards. 🎯 Core Concept: Turn everyday pump.fun token trading into a competitive sport with real-time tracking, daily SOL rewards, NFT multipliers, and transparent economics. ⚠️ Current Status: Currently in testing phase - not yet fully operational. ⚡ POWERED BY PUMP.FUN: All trading activity is conducted through pump.fin's proven token launch platform, ensuring secure, fast, and reliable transactions. CTA: {links.pump_app}",
+    "pump_features": "🏗️ Key Features: ⚡ Pump.Fun Integration (All trading powered by pump.fin's proven launchpad technology) • Real-Time Trading Tracking • Daily Reward Epochs (24-hour periods with automatic resets) • Competitive Elements (live leaderboards, achievement system) • Transparent Economics (5% platform fee, 50% reward pool, 45% development) • NFT Holder Benefits (Pump Pass NFTs with reward multipliers, fee-share dividends, marketplace trading) • Mobile-Optimized Experience.",
+    "pump_stack": "FE: Next.js 14, React 18, TS, Tailwind, Solana Wallet Adapter. BE: Node/Fastify, Prisma/Postgres, Anchor. Infra: Docker Compose, Solana CLI.",
+    "pump_install": "Dev: `pnpm i` → `docker-compose -f infra/docker-compose.yml up -d` → `pnpm --filter services/indexer dev` → `pnpm --filter apps/web dev`. Build/deploy Anchor programs then `pnpm build`.",
+    "pump_env": "Required envs: DATABASE_URL, SOLANA_RPC_URL, NEXT_PUBLIC_SOLANA_RPC, PLATFORM_WALLET, ADMIN_API_TOKEN, PUMPFUN_CREATOR_AUTHORITY, NEXT_PUBLIC_* program IDs.",
+    "pump_api": "Key endpoints: /rewards/leaderboard • /rewards/user • /fees • /healthz • /metrics • admin: /admin/fees/claim.",
+    "pump_current_focus": "Focus: wallet adapter stability, restore background workers (StreamWorker/EpochWorker), DB connectivity, Anchor provider setup, replace mocks with live trades.",
+    "pump_roadmap_30": "30d: Finish wallet integration, restore workers, stabilize DB, go live with real trades & leaderboard.",
+    "pump_roadmap_60": "60d: NFT marketplace + fee sharing, analytics, creator tooling; mobile plan.",
+    "pump_roadmap_90": "90d: Multi-chain strategy, trading tools/bots, governance & partnerships.",
+    "weekly_update_pump": "Pump Pill Arena: Currently in testing phase - wallet stability work + worker restoration in progress; leaderboard & merkle rewards under test. Not yet fully operational. Try /pump for full details.",
+
+    "parlay_overview": "🎯 F3 Parlay AI is the ultimate AI-powered sports betting research and parlay creation assistant that transforms how sports enthusiasts approach wagering. Built by F3 AI Labs, it combines advanced machine learning, comprehensive sports data analysis, and deep statistical research to help users create the most informed, high-probability parlays across US and international sports. 🔬 Core Mission: Democratize professional-grade sports betting research through AI, making sophisticated analysis accessible to all bettors while maintaining responsible gaming principles. The platform processes millions of data points to identify optimal betting opportunities and construct mathematically-sound parlay combinations. ⚠️ Current Status: Currently in development phase - not yet operational. CTA: {links.f3_site}",
+    "parlay_features": "⚡ Key Features: 🤖 Advanced AI Analysis Engine (Deep learning models analyzing player performance, team statistics, historical data, and real-time metrics) • 📊 Comprehensive Sports Coverage (NFL, NBA, MLB, NHL, Soccer, Tennis, Golf, MMA, and international leagues) • 🎯 Smart Parlay Builder (AI-powered correlation analysis to maximize payout potential while minimizing risk) • 📈 Risk Assessment Tools (Monte Carlo simulations and probability modeling for informed decision making) • 🕒 Real-Time Updates (Live odds monitoring, injury alerts, and weather impact analysis) • 📱 Mobile-First Design (Native iOS/Android apps with intuitive UX) • 🔒 Bankroll Management (Built-in tools for responsible gaming and budget tracking) • 📚 Educational Resources (Learn sports betting fundamentals and advanced strategies)",
+    "parlay_sports_coverage": "🌍 Sports Coverage: 🇺🇸 US Sports (NFL, NBA, MLB, NHL, NCAA Football/Basketball) • ⚽ Global Football (Premier League, La Liga, Serie A, Bundesliga, Champions League, World Cup) • 🎾 Tennis (ATP, WTA, Grand Slams) • ⛳ Golf (PGA Tour, European Tour, Majors) • 🥊 Combat Sports (UFC, Boxing) • 🏀 International Basketball (EuroLeague, FIBA) • 🏒 Hockey (NHL, International leagues) • 🏈 Additional Sports (Rugby, Cricket, Motorsports)",
+    "parlay_stack": "Tech Stack: React Native/Expo • Node.js/Express • Python ML Pipeline • PostgreSQL • Redis • AWS Lambda • TensorFlow/PyTorch • WebSocket APIs.",
+    "parlay_install": "Getting Started: Download from App Store/Google Play → Create account → Connect betting accounts (optional) → Start with free tier → Upgrade for premium features.",
+    "parlay_roadmap_30": "30d: iOS/Android app launches, core AI models live, basic sports coverage (NFL/NBA/MLB), free tier available.",
+    "parlay_roadmap_60": "60d: Advanced parlay builder, real-time alerts, international sports expansion, premium subscription tier.",
+    "parlay_roadmap_90": "90d: Social features, custom model training, API access for developers, enterprise partnerships.",
+    "weekly_update_parlay": "F3 Parlay AI: Currently in development phase - finalizing mobile apps, training core ML models on 2024 sports data, beta testing with pro bettors. Not yet operational. Launch soon → {links.f3_site}",
+
+    "trading_overview": "🤖 F3 Trading Bot is an advanced AI-powered trading assistant designed to help cryptocurrency traders make informed decisions through intelligent market analysis, automated trading strategies, and real-time market insights. Built by F3 AI Labs, it combines cutting-edge machine learning algorithms with comprehensive market data to provide users with professional-grade trading tools. 🎯 Core Mission: Democratize access to sophisticated trading strategies and market analysis through AI, making advanced trading techniques accessible to traders of all skill levels. ⚠️ Current Status: Currently in development phase - not yet operational. CTA: {links.f3_site}",
+    "trading_features": "⚡ Key Features: 🤖 AI-Powered Market Analysis (Advanced ML models analyzing market trends, sentiment, and technical indicators) • 📊 Real-Time Data Processing (Live market data integration from multiple exchanges and data sources) • 🎯 Automated Trading Strategies (Pre-built and customizable trading algorithms for various market conditions) • 📈 Risk Management Tools (Built-in risk assessment and portfolio management features) • 🔔 Smart Alerts & Notifications (Customizable alerts for price movements, volume spikes, and market opportunities) • 📱 Cross-Platform Access (Web and mobile interfaces for trading on the go) • 🔒 Security & Compliance (Enterprise-grade security with proper compliance measures)",
+    "trading_stack": "Tech Stack: Python • TensorFlow/PyTorch • Node.js/Express • React/Next.js • PostgreSQL • Redis • WebSocket APIs • Exchange APIs (Binance, Coinbase, etc.)",
+    "trading_install": "Getting Started: Currently in development - sign up for early access notifications on our website. Full release coming soon with web and mobile applications.",
+    "trading_roadmap_30": "30d: Core AI model development, exchange API integrations, basic web interface prototype.",
+    "trading_roadmap_60": "60d: Advanced trading strategies, risk management features, mobile app development.",
+    "trading_roadmap_90": "90d: Public beta launch, advanced analytics dashboard, social trading features.",
+    "weekly_update_trading": "F3 Trading Bot: Currently in development phase - building core AI models and exchange integrations. Not yet operational. Early access signup available → {links.f3_site}"
+  }
+}

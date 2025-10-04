@@ -1,0 +1,50 @@
+{
+  "name": "f3-ai-labs-discord-bot",
+  "version": "1.0.0",
+  "description": "Advanced Discord bot with AI integration and dynamic knowledge base system",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "docs": "jsdoc src/ -d docs/api",
+    "build": "npm run lint && npm run test"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "ai",
+    "openai",
+    "knowledge-base",
+    "hot-reload",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "F3 AI Labs Developer",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "openai": "^4.20.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.55.0",
+    "jsdoc": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/f3-ai-labs-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/f3-ai-labs-portfolio/issues"
+  },
+  "homepage": "https://github.com/yourusername/f3-ai-labs-portfolio#readme"
+}
