@@ -183,13 +183,4 @@ registerCommands() {
 - **Code Review** - Quality assurance practices
 - **Project Management** - Feature planning and delivery
 
-## 📞 Contact
 
-**Portfolio by:** [Your Name]  
-**Email:** [your.email@example.com]  
-**LinkedIn:** [Your LinkedIn Profile]  
-**GitHub:** [Your GitHub Profile]
-
----
-
-*This portfolio demonstrates advanced full-stack development skills, AI integration expertise, and production-ready system architecture. All code samples are sanitized and represent actual implementation patterns used in production.*
